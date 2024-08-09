@@ -1,0 +1,42 @@
+-- Crear base de datos.--
+
+CREATE database Grupo;
+
+-- Crear tabla Alumnos --
+use Grupo
+CREATE TABLE Alumnos 
+(
+  idMatricula INT NOT NULL,
+  Nombre VARCHAR(45) NOT NULL,
+  Apellido VARCHAR(45) NOT NULL,
+  Edad INT NOT NULL,
+  Carrera VARCHAR(45) NOT NULL,
+  PRIMARY KEY (idMatricula)
+  );
+	  
+-- Ingresar un dato a la tabla Alumno --
+use Grupo
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('1', 'Pedro', 'Meza', '23', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('2', 'Dana', 'Garcia', '25', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('3', 'Paulina', 'Gonzales', '22', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('4', 'Daniel', 'Guerrero', '24', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('5', 'Alejandro', 'Garcia', '23', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('6', 'Luz', 'Hernandez', '24', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('7', 'Evelyn', 'Mendez', '25', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('8', 'Enrique', 'Ramos', '20', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('9', 'Axel', 'Serrano', '22', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('10', 'Jesus', 'Arellano', '21', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('11', 'Karol', 'Guzman', '23', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('12', 'Nataly', 'Rodriguez', '23', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('13', 'Elsa', 'Alvizuri', '24', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('14', 'Ximena', 'Ramirez', '25', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('15', 'Camila', 'Hernandez', '26', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('16', 'Kenia', 'Mendoza', '24', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('18', 'Yessica', 'Perez', '24', 'Contabilidad');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('19', 'Samuel', 'De la O', '26', 'Informatica');
+INSERT INTO Alumnos(idMatricula, Nombre, Apellido, Edad, Carrera) VALUES ('20', 'Valeria', 'Gutierrez', '20', 'Informatica');
+
+
+-- select para verificar que se ingreso correctamente el primer dato --
+use Grupo
+SELECT * FROM Alumnos;
